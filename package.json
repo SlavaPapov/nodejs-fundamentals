@@ -1,0 +1,20 @@
+{
+  "name": "nodejs_fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "nodejs index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papovslava/nodejs_fundamentals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/papovslava/nodejs_fundamentals/issues"
+  },
+  "homepage": "https://github.com/papovslava/nodejs_fundamentals#readme"
+}
