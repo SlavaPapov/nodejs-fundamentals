@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "nodejs index.js"
+    "start_04": "node lesson_04/cli.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,17 @@
   },
   "homepage": "https://github.com/papovslava/nodejs_fundamentals#readme",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "yargs": "^17.2.1"
+  },
+  "bin": {
+    "reader": "cli.js"
   }
 }

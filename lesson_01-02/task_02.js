@@ -11,16 +11,16 @@
 Важно, чтобы работа программы основывалась на событиях.
 */
 
-"use strict";
+'use strict'
 
-const Counter = require("./counter");
+const Counter = require('./counter')
 
 function init() {
-  const argv = process.argv;
+  const argv = process.argv
   for (let index = 2; index < argv.length; index++) {
-    const end_at = argv[index];
-    new Counter(end_at).start();
+    const end_at = argv[index]
+    new Counter(end_at).start()
   }
 }
 
-init();
+init()
