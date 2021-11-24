@@ -17,8 +17,7 @@
     "url": "https://github.com/papovslava/nodejs_fundamentals/issues"
   },
   "homepage": "https://github.com/papovslava/nodejs_fundamentals#readme",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "mathjs": "^10.0.0"
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
