@@ -77,12 +77,19 @@ http
     if (path.dirListingRequested) {
       response.end(prettify(path))
     } else {
-      response.end(
-        _fs.readFileSync(path.dropoff + request.url, {
+      let file
+      try {
+        file = _fs.readFileSync(path.dropoff + request.url, {
           encoding: 'utf8',
           flag: 'r',
         })
-      )
+        response.statusCode = 200
+      } catch {
+        response.statusCode = 404
+      } finally {
+        response.write(file ?? '')
+        response.end()
+      }
     }
   })
   .listen(3000, 'localhost')
